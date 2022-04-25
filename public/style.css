@@ -1,0 +1,18 @@
+.bar-rad{
+  border-radius: 10px;
+  border: black solid 1px;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+  border: solid black 2px;
+}
+
+.mato {
+  margin-top: 100px;
+}
+
+.vh100 {
+  height: 100vh;
+}

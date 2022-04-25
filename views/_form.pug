@@ -1,0 +1,17 @@
+.form-group.mb-3
+  label.text-light(for="title") Title 
+  input.form-control(type="text" name="title" id="title" value=`${blog.title}` required)
+.form-group.mb-3
+  label.text-light(for="subject") Subject 
+  input.form-control(type="text" name="subject" id="subject" value=`${blog.title}` required)
+.form-group.mb-3
+  label.text-light(for="description") Description 
+  textarea.form-control(type="text" ,name="description" ,id="Description", cols="30", rows="3")
+    = `${blog.description}`
+.form-group.mb-3
+  label.text-light(for="markdown") Markdown 
+  textarea.form-control(type="text" required ,name="markdown" ,id="markdown" , cols="30", rows="7")
+    = `${blog.markdown}`
+
+a.btn.btn-secondary.mx-1(href=`/blogs/read/${blog.slug}`) Cancel
+button.btn.btn-primary.mx-1(type="submit") Save
